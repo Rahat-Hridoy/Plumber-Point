@@ -7,7 +7,6 @@
       "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
-    --color-amber-200: oklch(92.4% 0.12 95.746);
     --color-white: #fff;
     --spacing: 0.25rem;
     --text-xs: 0.75rem;
@@ -16,6 +15,7 @@
     --text-sm--line-height: calc(1.25 / 0.875);
     --text-base: 1rem;
     --text-base--line-height: calc(1.5 / 1);
+    --font-weight-light: 300;
     --font-weight-medium: 500;
     --font-weight-bold: 700;
     --font-weight-extrabold: 800;
@@ -211,6 +211,9 @@
       max-width: 1171px;
     }
   }
+  .m-auto {
+    margin: auto;
+  }
   .mx-auto {
     margin-inline: auto;
   }
@@ -247,14 +250,14 @@
   .h-\[32px\] {
     height: 32px;
   }
-  .h-\[44px\] {
-    height: 44px;
-  }
   .h-\[60px\] {
     height: 60px;
   }
   .h-\[293px\] {
     height: 293px;
+  }
+  .h-\[314px\] {
+    height: 314px;
   }
   .h-\[341px\] {
     height: 341px;
@@ -265,14 +268,14 @@
   .h-\[436px\] {
     height: 436px;
   }
+  .max-h-\[389px\] {
+    max-height: 389px;
+  }
   .w-0 {
     width: calc(var(--spacing) * 0);
   }
   .w-\[115px\] {
     width: 115px;
-  }
-  .w-\[160px\] {
-    width: 160px;
   }
   .w-\[237px\] {
     width: 237px;
@@ -283,8 +286,14 @@
   .w-\[390px\] {
     width: 390px;
   }
+  .w-\[432px\] {
+    width: 432px;
+  }
   .w-\[542px\] {
     width: 542px;
+  }
+  .w-\[630px\] {
+    width: 630px;
   }
   .max-w-\[366px\] {
     max-width: 366px;
@@ -316,9 +325,6 @@
   .gap-\[36px\] {
     gap: 36px;
   }
-  .rounded-full {
-    border-radius: calc(infinity * 1px);
-  }
   .rounded-md {
     border-radius: var(--radius-md);
   }
@@ -335,18 +341,6 @@
   .bg-white {
     background-color: var(--color-white);
   }
-  .bg-white\/30 {
-    background-color: color-mix(in srgb, #fff 30%, transparent);
-    @supports (color: color-mix(in lab, red, red)) {
-      background-color: color-mix(in oklab, var(--color-white) 30%, transparent);
-    }
-  }
-  .bg-white\/50 {
-    background-color: color-mix(in srgb, #fff 50%, transparent);
-    @supports (color: color-mix(in lab, red, red)) {
-      background-color: color-mix(in oklab, var(--color-white) 50%, transparent);
-    }
-  }
   .bg-white\/70 {
     background-color: color-mix(in srgb, #fff 70%, transparent);
     @supports (color: color-mix(in lab, red, red)) {
@@ -362,14 +356,17 @@
   .py-3 {
     padding-block: calc(var(--spacing) * 3);
   }
+  .py-\[38px\] {
+    padding-block: 38px;
+  }
   .py-\[56px\] {
     padding-block: 56px;
   }
   .pt-4 {
     padding-top: calc(var(--spacing) * 4);
   }
-  .pt-5 {
-    padding-top: calc(var(--spacing) * 5);
+  .pt-\[41px\] {
+    padding-top: 41px;
   }
   .pb-2 {
     padding-bottom: calc(var(--spacing) * 2);
@@ -382,9 +379,6 @@
   }
   .font-hero {
     font-family: var(--font-hero);
-  }
-  .font-primary {
-    font-family: var(--font-primary);
   }
   .text-base {
     font-size: var(--text-base);
@@ -401,31 +395,18 @@
   .text-\[12px\] {
     font-size: 12px;
   }
+  .text-\[30px\] {
+    font-size: 30px;
+  }
   .text-\[34px\] {
     font-size: 34px;
   }
   .text-\[44px\] {
     font-size: 44px;
   }
-  .leading-3 {
-    --tw-leading: calc(var(--spacing) * 3);
-    line-height: calc(var(--spacing) * 3);
-  }
-  .leading-4 {
-    --tw-leading: calc(var(--spacing) * 4);
-    line-height: calc(var(--spacing) * 4);
-  }
   .leading-6 {
     --tw-leading: calc(var(--spacing) * 6);
     line-height: calc(var(--spacing) * 6);
-  }
-  .leading-10 {
-    --tw-leading: calc(var(--spacing) * 10);
-    line-height: calc(var(--spacing) * 10);
-  }
-  .leading-12 {
-    --tw-leading: calc(var(--spacing) * 12);
-    line-height: calc(var(--spacing) * 12);
   }
   .leading-13 {
     --tw-leading: calc(var(--spacing) * 13);
@@ -443,6 +424,10 @@
     --tw-font-weight: var(--font-weight-extrabold);
     font-weight: var(--font-weight-extrabold);
   }
+  .font-light {
+    --tw-font-weight: var(--font-weight-light);
+    font-weight: var(--font-weight-light);
+  }
   .font-medium {
     --tw-font-weight: var(--font-weight-medium);
     font-weight: var(--font-weight-medium);
@@ -459,10 +444,6 @@
   }
   .underline {
     text-decoration-line: underline;
-  }
-  .shadow-md {
-    --tw-shadow: 0 4px 6px -1px var(--tw-shadow-color, rgb(0 0 0 / 0.1)), 0 2px 4px -2px var(--tw-shadow-color, rgb(0 0 0 / 0.1));
-    box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
   }
   .outline {
     outline-style: var(--tw-outline-style);
@@ -540,6 +521,15 @@
   syntax: "*";
   inherits: false;
 }
+@property --tw-outline-style {
+  syntax: "*";
+  inherits: false;
+  initial-value: solid;
+}
+@property --tw-duration {
+  syntax: "*";
+  inherits: false;
+}
 @property --tw-shadow {
   syntax: "*";
   inherits: false;
@@ -605,15 +595,6 @@
   inherits: false;
   initial-value: 0 0 #0000;
 }
-@property --tw-outline-style {
-  syntax: "*";
-  inherits: false;
-  initial-value: solid;
-}
-@property --tw-duration {
-  syntax: "*";
-  inherits: false;
-}
 @layer properties {
   @supports ((-webkit-hyphens: none) and (not (margin-trim: inline))) or ((-moz-orient: inline) and (not (color:rgb(from red r g b)))) {
     *, ::before, ::after, ::backdrop {
@@ -621,6 +602,8 @@
       --tw-leading: initial;
       --tw-font-weight: initial;
       --tw-tracking: initial;
+      --tw-outline-style: solid;
+      --tw-duration: initial;
       --tw-shadow: 0 0 #0000;
       --tw-shadow-color: initial;
       --tw-shadow-alpha: 100%;
@@ -635,8 +618,6 @@
       --tw-ring-offset-width: 0px;
       --tw-ring-offset-color: #fff;
       --tw-ring-offset-shadow: 0 0 #0000;
-      --tw-outline-style: solid;
-      --tw-duration: initial;
     }
   }
 }

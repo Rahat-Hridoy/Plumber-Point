@@ -21,3 +21,6 @@
 .btn {
   @apply w-[160px] h-[44px] rounded-full font-primary text-white leading-6 uppercase bg-[#DD3142] shadow-md;
 }
+.peragraph {
+  @apply text-[#6D6D6D] leading-[133%];
+}

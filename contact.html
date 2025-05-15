@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Plumber Point</title>
+    <link rel="stylesheet" href="./src/output.css" />
+    <link rel="stylesheet" href="./src/input.css" />
+  </head>
+
+  <body>
+    <!-- Navbar Start  -->
+    <nav>
+      <div class="container m-auto">
+        <div class="flex justify-between items-center h-[60px]">
+          <div>
+            <a href="#"><img src="./assets/logo.png" alt="logo" /></a>
+          </div>
+          <!-- navlists -->
+          <div>
+            <ul class="flex justify-between items-center gap-[36px]">
+              <li>
+                <a
+                  class="relative group nav-list-item p-1"
+                  href="./index.html"
+                  aria-label="Home"
+                >
+                  Home
+                  <span
+                    class="w-0 h-0.5 bg-[#DD3142] absolute left-0 -bottom-0 transition-all duration-300 group-hover:w-full"
+                  ></span>
+                </a>
+              </li>
+              <li>
+                <a
+                  class="relative group nav-list-item p-1"
+                  href="./about.html"
+                  aria-label="Home"
+                >
+                  About us
+                  <span
+                    class="w-0 h-0.5 bg-[#DD3142] absolute left-0 -bottom-0 transition-all duration-300 group-hover:w-full"
+                  ></span>
+                </a>
+              </li>
+              <li>
+                <a
+                  class="relative group nav-list-item p-1"
+                  href="./service.html"
+                  aria-label="Home"
+                >
+                  Services
+                  <span
+                    class="w-0 h-0.5 bg-[#DD3142] absolute left-0 -bottom-0 transition-all duration-300 group-hover:w-full"
+                  ></span>
+                </a>
+              </li>
+              <li>
+                <a
+                  class="relative group nav-list-item p-1"
+                  href="./project.html"
+                  aria-label="Home"
+                >
+                  Project
+                  <span
+                    class="w-0 h-0.5 bg-[#DD3142] absolute left-0 -bottom-0 transition-all duration-300 group-hover:w-full"
+                  ></span>
+                </a>
+              </li>
+              <li>
+                <a
+                  class="relative group nav-list-item p-1"
+                  href="./blog.html"
+                  aria-label="Home"
+                >
+                  Blogs
+                  <span
+                    class="w-0 h-0.5 bg-[#DD3142] absolute left-0 -bottom-0 transition-all duration-300 group-hover:w-full"
+                  ></span>
+                </a>
+              </li>
+              <li>
+                <a
+                  class="relative group nav-list-item p-1"
+                  href="./contact.html"
+                  aria-label="Home"
+                >
+                  Contact
+                  <span
+                    class="w-0 h-0.5 bg-[#DD3142] absolute left-0 -bottom-0 transition-all duration-300 group-hover:w-full"
+                  ></span>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="uppercase text-[12px] text-white font-bold bg-[#DD3142] p-3 rounded-md"
+                  >Request a call back</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- Navbar End  -->
+    <main>
+      <!-- contact banner section Start  -->
+      <section
+        class="bg-[url(../assets/section-banner.png)] bg-cover bg-center max-w-[1440px] h-[304px] relative m-auto"
+      >
+        <!-- overlay -->
+        <div
+          class="over-lay absolute inset-0 bg-gradient-to-r from-[#DD3142] to-[#C4C4C4]/20"
+        ></div>
+        <div class="container mx-auto">
+          <div class="relative">
+            <h1
+              class="font-black text-[44px] text-[#EEFF06] pt-[106px] pb-[14px] uppercase"
+            >
+              contact us
+            </h1>
+            <p class="text-sm text-white max-w-[432px]">
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industry's standard dummy text
+              ever since the 1500s, when an unknown printer took a galley of
+              type and scrambled it to make a type specimen book
+            </p>
+          </div>
+        </div>
+      </section>
+      <!-- contact banner section End -->
+      <!-- Get in Touch section start  -->
+      <section>
+        <div class="container m-auto">
+          <div
+            class="contact-wrapper max-w-[1070px] min-h-[364px] mx-auto pt-[63px]"
+          >
+            <h2 class="font-bold text-[40px] text-center">Get in touch</h2>
+            <!-- form -->
+            <form class="form pt-8">
+              <div class="grid grid-cols-2 gap-x-[39px] gap-y-[52px]">
+                <!-- name -->
+                <label for="name">
+                  <input
+                    type="text"
+                    name="name"
+                    id="name"
+                    placeholder="Full name"
+                    class="contact-input"
+                  />
+                </label>
+                <!-- email -->
+                <label for="email">
+                  <input
+                    type="email"
+                    name="email"
+                    id="email"
+                    placeholder="Email Address"
+                    class="contact-input"
+                  />
+                </label>
+                <!-- number -->
+                <label for="number">
+                  <input
+                    type="number"
+                    name="number"
+                    id="number"
+                    placeholder="Contact number "
+                    class="contact-input"
+                  />
+                </label>
+                <!-- subject -->
+                <label for="subject">
+                  <input
+                    type="text"
+                    name="subject"
+                    id="subject"
+                    placeholder="Subject"
+                    class="contact-input"
+                  />
+                </label>
+                <!-- description -->
+                <label for="description" class="col-span-full">
+                  <input
+                    type="text"
+                    name="description"
+                    id="subject"
+                    placeholder="Description"
+                    class="contact-input col-start-1"
+                  />
+                </label>
+              </div>
+              <div class="flex justify-end items-center py-[33px]">
+                <button type="submit" class="btn">Send A MEssage</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+      <!-- Get in Touch section End  -->
+      <!-- contact info section Start -->
+      <section class="bg-[#F9F9F9]">
+        <div class="container mx-auto">
+          <div
+            class="cinfo-wrapper flex justify-between items-center py-[33px]"
+          >
+            <!-- left side info -->
+            <div>
+              <!-- title -->
+              <div>
+                <h4 class="font-bold text-[18px] text-[#DD3142] pb-[7px]">
+                  Contact Us
+                </h4>
+                <p class="text-sm max-w-[377px]">
+                  It is a long established fact that a reader will be distracted
+                  by the readable content of a page when looking at its layout.
+                </p>
+              </div>
+              <!-- info -->
+              <div class="flex flex-col gap-6 pt-[37px]">
+                <div>
+                  <h5 class="font-medium text-sm text-[#DD3142] pb-[5px]">
+                    Business hours
+                  </h5>
+                  <p class="text-sm max-w-[377px]">
+                    Monday to Saturday 9:30 am - 4:30 pm
+                  </p>
+                </div>
+                <div>
+                  <h5 class="font-medium text-sm text-[#DD3142] pb-[5px]">
+                    Address
+                  </h5>
+                  <p class="text-sm max-w-[377px]">A-67 south Ex Delhi-11002</p>
+                </div>
+                <div>
+                  <h5 class="font-medium text-sm text-[#DD3142] pb-[5px]">
+                    Email:
+                  </h5>
+                  <p class="text-sm max-w-[377px]">abc@abc.com</p>
+                </div>
+                <div>
+                  <h5 class="font-medium text-sm text-[#DD3142] pb-[5px]">
+                    Phone:
+                  </h5>
+                  <p class="text-sm max-w-[377px]">1800 - 458495-4455</p>
+                </div>
+              </div>
+            </div>
+            <!-- right side map  -->
+            <div>
+              <img src="./assets/map.jpg" alt="map" class="w-[661px]" />
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- contact info section End  -->
+      <!-- Blog section Start  -->
+      <section>
+        <div class="container mx-auto">
+          <div class="pt-[67px] pb-[50px]">
+            <h2 class="text-[#0E0E0E] text-3xl font-medium uppercase">
+              our recent blogs
+            </h2>
+            <div
+              class="blog-card-wrapper flex justify-between items-center pt-[43px]"
+            >
+              <!-- blog-card 1 -->
+              <div>
+                <img
+                  src="./assets/Mask Group.jpg"
+                  alt="blog-card"
+                  class="w-[332px] h-[132px]"
+                />
+                <div class="py-2.5">
+                  <h4 class="max-w-[330px] text-xl">
+                    Lorem Ipsum is simply dummy text of the printing and
+                    typesetting.
+                  </h4>
+                  <p class="max-w-[330px] text-xs pt-[9px]">
+                    Don’t wrestle with rig assembly and hot, noisy miners at
+                    home. We have the fastest bitcoin mining hardware running
+                    for you....
+                  </p>
+                </div>
+              </div>
+              <!-- blog-card 2 -->
+              <div>
+                <img
+                  src="./assets/Mask Group.jpg"
+                  alt="blog-card"
+                  class="w-[332px] h-[132px]"
+                />
+                <div class="py-2.5">
+                  <h4 class="max-w-[330px] text-xl">
+                    Lorem Ipsum is simply dummy text of the printing and
+                    typesetting.
+                  </h4>
+                  <p class="max-w-[330px] text-xs pt-[9px]">
+                    Don’t wrestle with rig assembly and hot, noisy miners at
+                    home. We have the fastest bitcoin mining hardware running
+                    for you....
+                  </p>
+                </div>
+              </div>
+              <!-- blog-card 3 -->
+              <div>
+                <img
+                  src="./assets/Mask Group.jpg"
+                  alt="blog-card"
+                  class="w-[332px] h-[132px]"
+                />
+                <div class="py-2.5">
+                  <h4 class="max-w-[330px] text-xl">
+                    Lorem Ipsum is simply dummy text of the printing and
+                    typesetting.
+                  </h4>
+                  <p class="max-w-[330px] text-xs pt-[9px]">
+                    Don’t wrestle with rig assembly and hot, noisy miners at
+                    home. We have the fastest bitcoin mining hardware running
+                    for you....
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Blog section End  -->
+      <!-- footer section Start -->
+      <section class="bg-black">
+        <div class="container mx-auto">
+          <div class="wrapper flex justify-between gap-10 py-[31px]">
+            <!-- footer-article -->
+            <div>
+              <img src="./assets/logo_light.png" alt="logo-darkTheme" />
+              <p class="max-w-[362px] text-white text-xs pt-[27px] pb-[12px]">
+                Lore Issue is simply dummy text of the printing and typesetting
+                industry. Lore Issue has been the industry's standard dummy text
+                ever since the 1500s, when an unknown printer took a galley of
+                type and scrambled it to make a type specimen book.
+              </p>
+              <div class="social-media-icons flex items-center gap-5">
+                <img src="./assets/fb.svg" alt="facebook" />
+                <img src="./assets/google.svg" alt="google" />
+                <img src="./assets/twitter.svg" alt="twitter" />
+              </div>
+            </div>
+            <!-- footer-service -->
+            <div class="max-w-[149px]">
+              <h3 class="font-bold text-[#DD3142] uppercase">Our Services</h3>
+              <div class="flex flex-col justify-center gap-3 pt-[40px]">
+                <a href="#" class="text-xs text-white text-left"
+                  >Plumber Service</a
+                >
+                <a href="#" class="text-xs text-white text-left"
+                  >Bathroom Plumbing Service</a
+                >
+                <a href="#" class="text-xs text-white text-left"
+                  >Kitchen Plumbing Service</a
+                >
+                <a href="#" class="text-xs text-white text-left"
+                  >Roof Plumbing Service</a
+                >
+                <a href="#" class="text-xs text-white text-left"
+                  >Bathroom Plumbing Service</a
+                >
+                <a href="#" class="text-xs text-white text-left"
+                  >Kitchen Plumbing Service</a
+                >
+              </div>
+            </div>
+            <!-- footer-contact -->
+            <div class="max-w-[151px]">
+              <h3 class="font-bold text-[#DD3142] uppercase">Contact</h3>
+              <div class="flex flex-col justify-center gap-3 pt-[18px]">
+                <li>
+                  <p class="text-sm text-white text-left">1800-9938-2839</p>
+                  <p class="text-xs text-white text-left">
+                    support@plumberpoint.com
+                  </p>
+                </li>
+                <li>
+                  <p class="text-sm text-white text-left">A-507 Mandoli</p>
+                  <p class="text-xs text-white text-left">New Delhi, India</p>
+                </li>
+                <li>
+                  <p class="text-sm text-white text-left">Mon-Sat 9.00-15:00</p>
+                  <p class="text-xs text-white text-left">Sunday CLOSED</p>
+                </li>
+              </div>
+            </div>
+            <!-- footer-post -->
+            <div class="max-w-[260px]">
+              <h3 class="font-bold text-[#DD3142] uppercase">Contact</h3>
+              <div class="flex flex-col justify-center pt-[10px]">
+                <!-- post 1 -->
+                <div class="flex justify-center items-center -ml-6 -mb-7">
+                  <img src="./assets/post.png" alt="footer-post" class="" />
+                  <div class="-mt-[10px] -ml-[10px]">
+                    <h5 class="font-medium text-[10px] text-white">
+                      Sewer Line Repair
+                    </h5>
+                    <p class="text-[8px] text-white">
+                      Lore Issue . Simply dummy text . The printing and
+                      typesetting industry. Lore Issue has been the industry'.
+                    </p>
+                  </div>
+                </div>
+                <!-- post 2 -->
+                <div class="flex justify-center items-center -ml-6 -mb-7">
+                  <img src="./assets/post.png" alt="footer-post" class="" />
+                  <div class="-mt-[10px] -ml-[10px]">
+                    <h5 class="font-medium text-[10px] text-white">
+                      Sewer Line Repair
+                    </h5>
+                    <p class="text-[8px] text-white">
+                      Lore Issue . Simply dummy text . The printing and
+                      typesetting industry. Lore Issue has been the industry'.
+                    </p>
+                  </div>
+                </div>
+                <!-- post 3 -->
+                <div class="flex justify-center items-center -ml-6">
+                  <img src="./assets/post.png" alt="footer-post" class="" />
+                  <div class="-mt-[10px] -ml-[10px]">
+                    <h5 class="font-medium text-[10px] text-white">
+                      Sewer Line Repair
+                    </h5>
+                    <p class="text-[8px] text-white">
+                      Lore Issue . Simply dummy text . The printing and
+                      typesetting industry. Lore Issue has been the industry'.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <hr class="h-0.5 bg-white" />
+      <footer class="bg-black">
+        <div class="container mx-auto">
+          <div class="flex justify-between items-center py-3">
+            <div>
+              <p class="text-[10px] text-[#DD3142]">
+                ©Copyright 2020 Techwero Systems.
+              </p>
+            </div>
+            <div class="flex justify-between items-center gap-15">
+              <p class="text-[10px] text-[#DD3142]">Term of Services</p>
+              <p class="text-[10px] text-[#DD3142]">Privacy & policy</p>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <!-- footer section End  -->
+    </main>
+  </body>
+</html>
+
+<!-- npx @tailwindcss/cli -i ./src/input.css -o ./src/output.css --watch -->

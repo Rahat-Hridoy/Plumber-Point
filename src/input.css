@@ -24,3 +24,6 @@
 .peragraph {
   @apply text-[#6D6D6D] leading-[133%];
 }
+.learn-more {
+  @apply text-[#DD3142] underline;
+}

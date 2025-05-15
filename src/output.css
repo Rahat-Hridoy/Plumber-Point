@@ -239,6 +239,15 @@
   .my-\[76px\] {
     margin-block: 76px;
   }
+  .-mt-1 {
+    margin-top: calc(var(--spacing) * -1);
+  }
+  .-mt-2 {
+    margin-top: calc(var(--spacing) * -2);
+  }
+  .-mt-3 {
+    margin-top: calc(var(--spacing) * -3);
+  }
   .-mt-\[10px\] {
     margin-top: calc(10px * -1);
   }
@@ -362,6 +371,9 @@
   .w-\[332px\] {
     width: 332px;
   }
+  .w-\[350px\] {
+    width: 350px;
+  }
   .w-\[390px\] {
     width: 390px;
   }
@@ -388,6 +400,9 @@
   }
   .max-w-\[330px\] {
     max-width: 330px;
+  }
+  .max-w-\[350px\] {
+    max-width: 350px;
   }
   .max-w-\[362px\] {
     max-width: 362px;
@@ -427,6 +442,9 @@
   .grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
+  .grid-cols-3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
   .grid-cols-4 {
     grid-template-columns: repeat(4, minmax(0, 1fr));
   }
@@ -453,6 +471,12 @@
   }
   .justify-end {
     justify-content: flex-end;
+  }
+  .gap-0 {
+    gap: calc(var(--spacing) * 0);
+  }
+  .gap-1 {
+    gap: calc(var(--spacing) * 1);
   }
   .gap-2 {
     gap: calc(var(--spacing) * 2);
@@ -483,6 +507,9 @@
   }
   .gap-x-\[168px\] {
     column-gap: 168px;
+  }
+  .gap-y-5 {
+    row-gap: calc(var(--spacing) * 5);
   }
   .gap-y-\[29px\] {
     row-gap: 29px;
@@ -521,6 +548,9 @@
   .bg-gradient-to-r {
     --tw-gradient-position: to right in oklab;
     background-image: linear-gradient(var(--tw-gradient-stops));
+  }
+  .bg-\[url\(\.\.\/assets\/Project-banner\.jpg\)\] {
+    background-image: url(../assets/Project-banner.jpg);
   }
   .bg-\[url\(\.\.\/assets\/section-banner\.png\)\] {
     background-image: url(../assets/section-banner.png);
@@ -589,6 +619,9 @@
   }
   .pt-6 {
     padding-top: calc(var(--spacing) * 6);
+  }
+  .pt-12 {
+    padding-top: calc(var(--spacing) * 12);
   }
   .pt-\[9px\] {
     padding-top: 9px;
@@ -753,8 +786,8 @@
   .text-\[\#6D6D6D\] {
     color: #6D6D6D;
   }
-  .text-\[\#6D6D6\] {
-    color: #6D6D6;
+  .text-\[\#222222\] {
+    color: #222222;
   }
   .text-\[\#DD3142\] {
     color: #DD3142;

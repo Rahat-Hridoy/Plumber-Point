@@ -4,8 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Plumber Point</title>
+    <link rel="icon" type="image/x-icon" href="./assets/favicon.png" />
     <link rel="stylesheet" href="./src/output.css" />
     <link rel="stylesheet" href="./src/input.css" />
+    <link rel="stylesheet" type="text/css" href="./src/slick.css" />
+    <link rel="stylesheet" type="text/css" href="./src/slick-theme.css" />
   </head>
 
   <body>
@@ -17,11 +20,11 @@
             <a href="#"><img src="./assets/logo.png" alt="logo" /></a>
           </div>
           <!-- navlists -->
-          <div>
-            <ul class="flex justify-between items-center gap-[36px]">
+          <div class="flex justify-between items-center gap-x-[40px]">
+            <ul class="h-4 flex justify-end items-center gap-[37px]">
               <li>
                 <a
-                  class="relative group nav-list-item p-1"
+                  class="relative group nav-list-item"
                   href="./index.html"
                   aria-label="Home"
                 >
@@ -33,7 +36,7 @@
               </li>
               <li>
                 <a
-                  class="relative group nav-list-item p-1"
+                  class="relative group nav-list-item"
                   href="./about.html"
                   aria-label="Home"
                 >
@@ -45,7 +48,7 @@
               </li>
               <li>
                 <a
-                  class="relative group nav-list-item p-1"
+                  class="relative group nav-list-item"
                   href="./service.html"
                   aria-label="Home"
                 >
@@ -57,7 +60,7 @@
               </li>
               <li>
                 <a
-                  class="relative group nav-list-item p-1"
+                  class="relative group nav-list-item"
                   href="./project.html"
                   aria-label="Home"
                 >
@@ -69,7 +72,7 @@
               </li>
               <li>
                 <a
-                  class="relative group nav-list-item p-1"
+                  class="relative group nav-list-item"
                   href="./blog.html"
                   aria-label="Home"
                 >
@@ -81,7 +84,7 @@
               </li>
               <li>
                 <a
-                  class="relative group nav-list-item p-1"
+                  class="relative group nav-list-item"
                   href="./contact.html"
                   aria-label="Home"
                 >
@@ -91,14 +94,14 @@
                   ></span>
                 </a>
               </li>
-              <li>
-                <a
-                  href="#"
-                  class="uppercase text-[12px] text-white font-bold bg-[#DD3142] p-3 rounded-md"
-                  >Request a call back</a
-                >
-              </li>
             </ul>
+            <div>
+              <a
+                href="#"
+                class="w-[146px] h-[36px] uppercase text-[12px] text-white font-bold bg-[#DD3142] px-2 py-3 rounded-md"
+                >Request a call back</a
+              >
+            </div>
           </div>
         </div>
       </div>
@@ -107,7 +110,7 @@
     <main>
       <!-- contact banner section Start  -->
       <section
-        class="bg-[url(../assets/section-banner.png)] bg-cover bg-center max-w-[1440px] h-[304px] relative m-auto"
+        class="bg-[url(../assets/section-banner.png)] bg-cover bg-center bg-no-repeat h-[304px] relative m-auto"
       >
         <!-- overlay -->
         <div
@@ -134,12 +137,12 @@
       <section>
         <div class="container m-auto">
           <div
-            class="contact-wrapper max-w-[1070px] min-h-[364px] mx-auto pt-[63px]"
+            class="contact-wrapper max-w-[1070px] min-h-[364px] mx-auto pt-[56px]"
           >
             <h2 class="font-bold text-[40px] text-center">Get in touch</h2>
             <!-- form -->
-            <form class="form pt-8">
-              <div class="grid grid-cols-2 gap-x-[39px] gap-y-[52px]">
+            <form class="form pt-4">
+              <div class="form-wapper grid grid-cols-2 gap-[44px]">
                 <!-- name -->
                 <label for="name">
                   <input
@@ -192,7 +195,12 @@
                 </label>
               </div>
               <div class="flex justify-end items-center py-[33px]">
-                <button type="submit" class="btn">Send A MEssage</button>
+                <button
+                  type="submit"
+                  class="w-[214px] h-[52px] rounded-full font-primary font-bold text-xl text-white leading-6 uppercase bg-[#DD3142] hover:cursor-pointer hover:border-1"
+                >
+                  Send A MEssage
+                </button>
               </div>
             </form>
           </div>
@@ -249,7 +257,11 @@
             </div>
             <!-- right side map  -->
             <div>
-              <img src="./assets/map.jpg" alt="map" class="w-[661px]" />
+              <img
+                src="./assets/map.jpg"
+                alt="map"
+                class="w-[661px] h-[354px]"
+              />
             </div>
           </div>
         </div>
@@ -456,6 +468,11 @@
       </footer>
       <!-- footer section End  -->
     </main>
+
+    <!-- Scripts -->
+    <script src="./JS/jquery-3.7.1.min.js"></script>
+    <script src="./JS/slick.min.js"></script>
+    <script src="./JS/main.js"></script>
   </body>
 </html>
 

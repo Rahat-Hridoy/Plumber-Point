@@ -4,8 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Plumber Point</title>
+    <link rel="icon" type="image/x-icon" href="./assets/favicon.png" />
     <link rel="stylesheet" href="./src/output.css" />
     <link rel="stylesheet" href="./src/input.css" />
+    <link rel="stylesheet" type="text/css" href="./src/slick.css" />
+    <link rel="stylesheet" type="text/css" href="./src/slick-theme.css" />
   </head>
   <body>
     <!-- Navbar Start  -->
@@ -16,11 +19,11 @@
             <a href="#"><img src="./assets/logo.png" alt="logo" /></a>
           </div>
           <!-- navlists -->
-          <div>
-            <ul class="flex justify-between items-center gap-[36px]">
+          <div class="flex justify-between items-center gap-x-[40px]">
+            <ul class="h-4 flex justify-end items-center gap-[37px]">
               <li>
                 <a
-                  class="relative group nav-list-item p-1"
+                  class="relative group nav-list-item"
                   href="./index.html"
                   aria-label="Home"
                 >
@@ -32,7 +35,7 @@
               </li>
               <li>
                 <a
-                  class="relative group nav-list-item p-1"
+                  class="relative group nav-list-item"
                   href="./about.html"
                   aria-label="Home"
                 >
@@ -44,7 +47,7 @@
               </li>
               <li>
                 <a
-                  class="relative group nav-list-item p-1"
+                  class="relative group nav-list-item"
                   href="./service.html"
                   aria-label="Home"
                 >
@@ -56,7 +59,7 @@
               </li>
               <li>
                 <a
-                  class="relative group nav-list-item p-1"
+                  class="relative group nav-list-item"
                   href="./project.html"
                   aria-label="Home"
                 >
@@ -68,7 +71,7 @@
               </li>
               <li>
                 <a
-                  class="relative group nav-list-item p-1"
+                  class="relative group nav-list-item"
                   href="./blog.html"
                   aria-label="Home"
                 >
@@ -80,7 +83,7 @@
               </li>
               <li>
                 <a
-                  class="relative group nav-list-item p-1"
+                  class="relative group nav-list-item"
                   href="./contact.html"
                   aria-label="Home"
                 >
@@ -90,14 +93,14 @@
                   ></span>
                 </a>
               </li>
-              <li>
-                <a
-                  href="#"
-                  class="uppercase text-[12px] text-white font-bold bg-[#DD3142] p-3 rounded-md"
-                  >Request a call back</a
-                >
-              </li>
             </ul>
+            <div>
+              <a
+                href="#"
+                class="w-[146px] h-[36px] uppercase text-[12px] text-white font-bold bg-[#DD3142] px-2 py-3 rounded-md"
+                >Request a call back</a
+              >
+            </div>
           </div>
         </div>
       </div>
@@ -106,7 +109,7 @@
     <main>
       <!-- project banner section Start  -->
       <section
-        class="bg-[url(../assets/Project-banner.jpg)] bg-cover bg-center max-w-[1440px] h-[304px] relative m-auto"
+        class="bg-[url(../assets/Project-banner.jpg)] bg-cover bg-center bg-no-repeat h-[304px] relative m-auto"
       ></section>
       <!-- project banner section End -->
       <!-- project-card section Start -->
@@ -301,6 +304,98 @@
         </div>
       </section>
       <!-- commercial section End  -->
+      <!-- testimonial section Start  -->
+      <section
+        class="bg-[url(../assets/testimonial-bg.jpg)] min-h-[316px] bg-cover bg-no-repeat bg-center relative"
+      >
+        <!-- overlay -->
+        <div class="overlay absolute inset-0 bg-black/70"></div>
+        <div class="container mx-auto">
+          <div class="testimonial-wrapper absolute inset-0">
+            <div class="flex flex-col items-center gap-[41px] pt-[45px]">
+              <h2
+                class="font-medium text-3xl text-[#EEFF06] text-center uppercase"
+              >
+                testimonial
+              </h2>
+              <!-- slider -->
+              <div class="slider-wrapper w-[950px]">
+                <div class="single-item">
+                  <!-- card 1 -->
+                  <div class="slider-item flex flex-col items-center">
+                    <p
+                      class="max-w-[931px] text-xl text-white text-center leading-6"
+                    >
+                      Lorem Ipsum is simply dummy text of the printing and
+                      typesetting industry. Lorem Ipsum has been the industry's
+                      standard dummy text ever since the 1500s, when an unknown
+                      printer took a galley of type and scrambled it to make a
+                      type specimen book.
+                    </p>
+                    <h5
+                      class="pt-[20px] text-[20px] text-white font-bold text-center"
+                    >
+                      Johny Vino
+                    </h5>
+                  </div>
+                  <!-- card 1 -->
+                  <div class="slider-item flex flex-col items-center">
+                    <p
+                      class="max-w-[931px] text-xl text-white text-center leading-6"
+                    >
+                      Lorem Ipsum is simply dummy text of the printing and
+                      typesetting industry. Lorem Ipsum has been the industry's
+                      standard dummy text ever since the 1500s, when an unknown
+                      printer took a galley of type and scrambled it to make a
+                      type specimen book.
+                    </p>
+                    <h5
+                      class="pt-[20px] text-[20px] text-white text-center font-bold"
+                    >
+                      Johny Vino
+                    </h5>
+                  </div>
+                  <!-- card 1 -->
+                  <div class="slider-item flex flex-col items-center">
+                    <p
+                      class="max-w-[931px] text-xl text-white text-center leading-6"
+                    >
+                      Lorem Ipsum is simply dummy text of the printing and
+                      typesetting industry. Lorem Ipsum has been the industry's
+                      standard dummy text ever since the 1500s, when an unknown
+                      printer took a galley of type and scrambled it to make a
+                      type specimen book.
+                    </p>
+                    <h5
+                      class="pt-[20px] text-[20px] text-white text-center font-bold"
+                    >
+                      Johny Vino
+                    </h5>
+                  </div>
+                  <!-- card 1 -->
+                  <div class="slider-item flex flex-col items-center">
+                    <p
+                      class="max-w-[931px] text-xl text-white text-center leading-6"
+                    >
+                      Lorem Ipsum is simply dummy text of the printing and
+                      typesetting industry. Lorem Ipsum has been the industry's
+                      standard dummy text ever since the 1500s, when an unknown
+                      printer took a galley of type and scrambled it to make a
+                      type specimen book.
+                    </p>
+                    <h5
+                      class="pt-[20px] text-[20px] text-white text-center font-bold"
+                    >
+                      Johny Vino
+                    </h5>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- testimonial section End  -->
       <!-- Blog section Start  -->
       <section>
         <div class="container mx-auto">
@@ -502,6 +597,11 @@
       </footer>
       <!-- footer section End  -->
     </main>
+
+    <!-- Scripts -->
+    <script src="./JS/jquery-3.7.1.min.js"></script>
+    <script src="./JS/slick.min.js"></script>
+    <script src="./JS/main.js"></script>
   </body>
 </html>
 

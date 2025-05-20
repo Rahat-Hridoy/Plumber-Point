@@ -4,8 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Plumber Point</title>
+    <link rel="icon" type="image/x-icon" href="./assets/favicon.png" />
     <link rel="stylesheet" href="./src/output.css" />
     <link rel="stylesheet" href="./src/input.css" />
+    <link rel="stylesheet" type="text/css" href="./src/slick.css" />
+    <link rel="stylesheet" type="text/css" href="./src/slick-theme.css" />
   </head>
   <body>
     <!-- Navbar Start  -->
@@ -16,11 +19,11 @@
             <a href="#"><img src="./assets/logo.png" alt="logo" /></a>
           </div>
           <!-- navlists -->
-          <div>
-            <ul class="flex justify-between items-center gap-[36px]">
+          <div class="flex justify-between items-center gap-x-[40px]">
+            <ul class="h-4 flex justify-end items-center gap-[37px]">
               <li>
                 <a
-                  class="relative group nav-list-item p-1"
+                  class="relative group nav-list-item"
                   href="./index.html"
                   aria-label="Home"
                 >
@@ -32,7 +35,7 @@
               </li>
               <li>
                 <a
-                  class="relative group nav-list-item p-1"
+                  class="relative group nav-list-item"
                   href="./about.html"
                   aria-label="Home"
                 >
@@ -44,7 +47,7 @@
               </li>
               <li>
                 <a
-                  class="relative group nav-list-item p-1"
+                  class="relative group nav-list-item"
                   href="./service.html"
                   aria-label="Home"
                 >
@@ -56,7 +59,7 @@
               </li>
               <li>
                 <a
-                  class="relative group nav-list-item p-1"
+                  class="relative group nav-list-item"
                   href="./project.html"
                   aria-label="Home"
                 >
@@ -68,7 +71,7 @@
               </li>
               <li>
                 <a
-                  class="relative group nav-list-item p-1"
+                  class="relative group nav-list-item"
                   href="./blog.html"
                   aria-label="Home"
                 >
@@ -80,7 +83,7 @@
               </li>
               <li>
                 <a
-                  class="relative group nav-list-item p-1"
+                  class="relative group nav-list-item"
                   href="./contact.html"
                   aria-label="Home"
                 >
@@ -90,14 +93,14 @@
                   ></span>
                 </a>
               </li>
-              <li>
-                <a
-                  href="#"
-                  class="uppercase text-[12px] text-white font-bold bg-[#DD3142] p-3 rounded-md"
-                  >Request a call back</a
-                >
-              </li>
             </ul>
+            <div>
+              <a
+                href="#"
+                class="w-[146px] h-[36px] uppercase text-[12px] text-white font-bold bg-[#DD3142] px-2 py-3 rounded-md"
+                >Request a call back</a
+              >
+            </div>
           </div>
         </div>
       </div>
@@ -128,7 +131,7 @@
               <img
                 src="./assets/image 10.png"
                 alt="figure"
-                class="w-[302px] h-[436px] absolute -left-[270px] z-10"
+                class="w-[302px] h-[436px] absolute -left-[268px] -top-[51px] z-10"
               />
               <img
                 src="./assets/image 9.png"
@@ -141,13 +144,15 @@
       </section>
       <!-- Hero section End -->
       <!-- Servise section Start  -->
-      <section class="bg-[#DD3142] mt-[48px]">
+      <section class="bg-[#DD3142] mt-[44px]">
         <div class="container mx-auto">
           <div
-            class="card-wrapper py-[56px] flex justify-center items-center gap-30"
+            class="card-wrapper min-h-[297px] flex justify-center items-center gap-[98px] pt-[35px]"
           >
             <!-- card 1 -->
-            <div class="flex flex-col justify-center items-center leading-6">
+            <div
+              class="flex flex-col justify-center items-center leading-6 mt-"
+            >
               <img src="./assets/resident.svg" alt="image" />
               <h3 class="text-white text-sm font-medium py-3">
                 Residental Service
@@ -157,13 +162,13 @@
                 industry. Lorem Ipsum has been the industry.
               </p>
               <button
-                class="bg-white w-[115px] h-[32px] text-base rounded-md underline hover:cursor-pointer"
+                class="bg-white w-[115px] h-[32px] mt-1 text-base rounded-md underline hover:cursor-pointer"
                 type="button"
               >
                 Learn More
               </button>
             </div>
-            <!-- card 1 -->
+            <!-- card 2 -->
             <div class="flex flex-col justify-center items-center leading-6">
               <img src="./assets/commercial.svg" alt="image" />
               <h3 class="text-white text-sm font-medium py-3">
@@ -174,22 +179,24 @@
                 industry. Lorem Ipsum has been the industry.
               </p>
               <button
-                class="bg-white w-[115px] h-[32px] text-base rounded-md underline hover:cursor-pointer"
+                class="bg-white w-[115px] h-[32px] mt-1 text-base rounded-md underline hover:cursor-pointer"
                 type="button"
               >
                 Learn More
               </button>
             </div>
-            <!-- card 1 -->
+            <!-- card 2 -->
             <div class="flex flex-col justify-center items-center leading-6">
               <img src="./assets/mantanence.svg" alt="image" />
-              <h3 class="text-white text-sm font-medium py-3">Maintenance</h3>
-              <p class="w-[237px] text-xs text-white text-center pb-2">
+              <h3 class="text-white text-sm font-medium py-3 -mt-2">
+                Maintenance
+              </h3>
+              <p class="w-[237px] text-xs text-white text-center pb-2 -mt-2">
                 Lorem Ipsum is simply dummy text of the printing and typesetting
                 industry. Lorem Ipsum has been the industry.
               </p>
               <button
-                class="bg-white w-[115px] h-[32px] text-base rounded-md underline hover:cursor-pointer"
+                class="bg-white w-[115px] h-[32px] mt-1 text-base rounded-md underline hover:cursor-pointer"
                 type="button"
               >
                 Learn More
@@ -225,7 +232,7 @@
       <!-- History section Start -->
       <section class="bg-[#DD3142]">
         <div class="container m-auto">
-          <div class="wrapper flex justify-between items-center py-[38px]">
+          <div class="wrapper min-h-[389px] flex justify-between items-center">
             <!-- left-side-figure -->
             <div class="figure">
               <img
@@ -235,11 +242,11 @@
               />
             </div>
             <!-- right-side-article -->
-            <div class="article">
-              <h2 class="font-bold text-[44px] text-white pb-2">
+            <div class="article pr-3">
+              <h2 class="font-bold text-[44px] text-white pb-3">
                 Our Company History
               </h2>
-              <p class="w-[432px] text-sm text-white">
+              <p class="w-[432px] text-sm text-white leading-4">
                 Lorem Ipsum is simply dummy text of the printing and typesetting
                 industry. Lorem Ipsum has been the industry's standard dummy
                 text ever since the 1500s, when an unknown printer took a galley
@@ -248,7 +255,7 @@
               <h2 class="font-light text-[30px] text-white pt-[41px] pb-2">
                 Trust Our Team of Experts
               </h2>
-              <p class="w-[432px] text-sm text-white">
+              <p class="w-[432px] text-sm text-white leading-4">
                 Lorem Ipsum is simply dummy text of the printing and typesetting
                 industry. Lorem Ipsum has been the industry's standard dummy
                 text ever since the 1500s, when an unknown printer took a galley
@@ -348,7 +355,9 @@
       <!-- Plumber point End -->
       <!-- figure start -->
       <section>
-        <img src="./assets/image 4.jpg" alt="figure" class="h-[255px] m-auto" />
+        <div
+          class="bg-[url(../assets/section-banner.png)] h-[255px] bg-cover bg-no-repeat bg-center m-auto"
+        ></div>
       </section>
       <!-- figure End -->
       <!-- Team Section Start  -->
@@ -452,6 +461,98 @@
         </div>
       </section>
       <!-- Team Section End -->
+      <!-- testimonial section Start  -->
+      <section
+        class="bg-[url(../assets/testimonial-bg.jpg)] min-h-[316px] bg-cover bg-no-repeat bg-center relative"
+      >
+        <!-- overlay -->
+        <div class="overlay absolute inset-0 bg-black/70"></div>
+        <div class="container mx-auto">
+          <div class="testimonial-wrapper absolute inset-0">
+            <div class="flex flex-col items-center gap-[41px] pt-[45px]">
+              <h2
+                class="font-medium text-3xl text-[#EEFF06] text-center uppercase"
+              >
+                testimonial
+              </h2>
+              <!-- slider -->
+              <div class="slider-wrapper w-[950px]">
+                <div class="single-item">
+                  <!-- card 1 -->
+                  <div class="slider-item flex flex-col items-center">
+                    <p
+                      class="max-w-[931px] text-xl text-white text-center leading-6"
+                    >
+                      Lorem Ipsum is simply dummy text of the printing and
+                      typesetting industry. Lorem Ipsum has been the industry's
+                      standard dummy text ever since the 1500s, when an unknown
+                      printer took a galley of type and scrambled it to make a
+                      type specimen book.
+                    </p>
+                    <h5
+                      class="pt-[20px] text-[20px] text-white font-bold text-center"
+                    >
+                      Johny Vino
+                    </h5>
+                  </div>
+                  <!-- card 1 -->
+                  <div class="slider-item flex flex-col items-center">
+                    <p
+                      class="max-w-[931px] text-xl text-white text-center leading-6"
+                    >
+                      Lorem Ipsum is simply dummy text of the printing and
+                      typesetting industry. Lorem Ipsum has been the industry's
+                      standard dummy text ever since the 1500s, when an unknown
+                      printer took a galley of type and scrambled it to make a
+                      type specimen book.
+                    </p>
+                    <h5
+                      class="pt-[20px] text-[20px] text-white text-center font-bold"
+                    >
+                      Johny Vino
+                    </h5>
+                  </div>
+                  <!-- card 1 -->
+                  <div class="slider-item flex flex-col items-center">
+                    <p
+                      class="max-w-[931px] text-xl text-white text-center leading-6"
+                    >
+                      Lorem Ipsum is simply dummy text of the printing and
+                      typesetting industry. Lorem Ipsum has been the industry's
+                      standard dummy text ever since the 1500s, when an unknown
+                      printer took a galley of type and scrambled it to make a
+                      type specimen book.
+                    </p>
+                    <h5
+                      class="pt-[20px] text-[20px] text-white text-center font-bold"
+                    >
+                      Johny Vino
+                    </h5>
+                  </div>
+                  <!-- card 1 -->
+                  <div class="slider-item flex flex-col items-center">
+                    <p
+                      class="max-w-[931px] text-xl text-white text-center leading-6"
+                    >
+                      Lorem Ipsum is simply dummy text of the printing and
+                      typesetting industry. Lorem Ipsum has been the industry's
+                      standard dummy text ever since the 1500s, when an unknown
+                      printer took a galley of type and scrambled it to make a
+                      type specimen book.
+                    </p>
+                    <h5
+                      class="pt-[20px] text-[20px] text-white text-center font-bold"
+                    >
+                      Johny Vino
+                    </h5>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- testimonial section End  -->
       <!-- Blog section Start  -->
       <section>
         <div class="container mx-auto">
@@ -465,7 +566,7 @@
               <!-- blog-card 1 -->
               <div>
                 <img
-                  src="./assets/Mask Group.jpg"
+                  src="./assets/blog1.png"
                   alt="blog-card"
                   class="w-[332px] h-[132px]"
                 />
@@ -484,7 +585,7 @@
               <!-- blog-card 2 -->
               <div>
                 <img
-                  src="./assets/Mask Group.jpg"
+                  src="./assets/blog2.png"
                   alt="blog-card"
                   class="w-[332px] h-[132px]"
                 />
@@ -503,7 +604,7 @@
               <!-- blog-card 3 -->
               <div>
                 <img
-                  src="./assets/Mask Group.jpg"
+                  src="./assets/blog1.png"
                   alt="blog-card"
                   class="w-[332px] h-[132px]"
                 />
@@ -653,6 +754,11 @@
       </footer>
       <!-- footer section End  -->
     </main>
+
+    <!-- Scripts -->
+    <script src="./JS/jquery-3.7.1.min.js"></script>
+    <script src="./JS/slick.min.js"></script>
+    <script src="./JS/main.js"></script>
   </body>
 </html>
 

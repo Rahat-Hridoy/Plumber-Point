@@ -13,99 +13,203 @@
 
   <body>
     <!-- Navbar Start  -->
-    <nav>
+    <header>
       <div class="container m-auto">
         <div class="flex justify-between items-center h-[60px]">
           <div>
-            <a href="#"><img src="./assets/logo.png" alt="logo" /></a>
+            <a href="./index.html"
+              ><img src="./assets/logo.png" alt="logo"
+            /></a>
           </div>
           <!-- navlists -->
-          <div class="flex justify-between items-center gap-x-[40px]">
-            <ul class="h-4 flex justify-end items-center gap-[37px]">
-              <li>
-                <a
-                  class="relative group nav-list-item"
-                  href="./index.html"
-                  aria-label="Home"
-                >
-                  Home
-                  <span
-                    class="w-0 h-0.5 bg-[#DD3142] absolute left-0 -bottom-0 transition-all duration-300 group-hover:w-full"
-                  ></span>
-                </a>
-              </li>
-              <li>
-                <a
-                  class="relative group nav-list-item"
-                  href="./about.html"
-                  aria-label="Home"
-                >
-                  About us
-                  <span
-                    class="w-0 h-0.5 bg-[#DD3142] absolute left-0 -bottom-0 transition-all duration-300 group-hover:w-full"
-                  ></span>
-                </a>
-              </li>
-              <li>
-                <a
-                  class="relative group nav-list-item"
-                  href="./service.html"
-                  aria-label="Home"
-                >
-                  Services
-                  <span
-                    class="w-0 h-0.5 bg-[#DD3142] absolute left-0 -bottom-0 transition-all duration-300 group-hover:w-full"
-                  ></span>
-                </a>
-              </li>
-              <li>
-                <a
-                  class="relative group nav-list-item"
-                  href="./project.html"
-                  aria-label="Home"
-                >
-                  Project
-                  <span
-                    class="w-0 h-0.5 bg-[#DD3142] absolute left-0 -bottom-0 transition-all duration-300 group-hover:w-full"
-                  ></span>
-                </a>
-              </li>
-              <li>
-                <a
-                  class="relative group nav-list-item"
-                  href="./blog.html"
-                  aria-label="Home"
-                >
-                  Blogs
-                  <span
-                    class="w-0 h-0.5 bg-[#DD3142] absolute left-0 -bottom-0 transition-all duration-300 group-hover:w-full"
-                  ></span>
-                </a>
-              </li>
-              <li>
-                <a
-                  class="relative group nav-list-item"
-                  href="./contact.html"
-                  aria-label="Home"
-                >
-                  Contact
-                  <span
-                    class="w-0 h-0.5 bg-[#DD3142] absolute left-0 -bottom-0 transition-all duration-300 group-hover:w-full"
-                  ></span>
-                </a>
-              </li>
-            </ul>
-            <div>
-              <a
-                href="#"
-                class="w-[146px] h-[36px] uppercase text-[12px] text-white font-bold bg-[#DD3142] px-2 py-3 rounded-md"
-                >Request a call back</a
+          <div>
+            <!-- mobile responsive navbar -->
+            <div class="block relative md:hidden">
+              <input type="checkbox" id="toggle-menu" class="peer hidden" />
+              <label for="toggle-menu" class="cursor-pointer relative z-10">
+                <img
+                  src="./assets/menu_12721665.png"
+                  alt="toggle-menu"
+                  class="w-[32px] h-[32px]"
+                />
+              </label>
+              <nav
+                class="fixed top-[55px] right-0 z-20 bg-white/80 w-full h-screen translate-x-full peer-checked:translate-x-0 duration-300"
               >
+                <ul class="flex flex-col items-center py-6 gap-6">
+                  <li>
+                    <a
+                      class="relative group nav-list-item"
+                      href="./index.html"
+                      aria-label="Home"
+                    >
+                      Home
+                      <span
+                        class="w-0 h-0.5 bg-[#DD3142] absolute left-0 -bottom-0 transition-all duration-300 group-hover:w-full"
+                      ></span>
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      class="relative group nav-list-item"
+                      href="./about.html"
+                      aria-label="Home"
+                    >
+                      About us
+                      <span
+                        class="w-0 h-0.5 bg-[#DD3142] absolute left-0 -bottom-0 transition-all duration-300 group-hover:w-full"
+                      ></span>
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      class="relative group nav-list-item"
+                      href="./service.html"
+                      aria-label="Home"
+                    >
+                      Services
+                      <span
+                        class="w-0 h-0.5 bg-[#DD3142] absolute left-0 -bottom-0 transition-all duration-300 group-hover:w-full"
+                      ></span>
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      class="relative group nav-list-item"
+                      href="./project.html"
+                      aria-label="Home"
+                    >
+                      Project
+                      <span
+                        class="w-0 h-0.5 bg-[#DD3142] absolute left-0 -bottom-0 transition-all duration-300 group-hover:w-full"
+                      ></span>
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      class="relative group nav-list-item"
+                      href="./blog.html"
+                      aria-label="Home"
+                    >
+                      Blogs
+                      <span
+                        class="w-0 h-0.5 bg-[#DD3142] absolute left-0 -bottom-0 transition-all duration-300 group-hover:w-full"
+                      ></span>
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      class="relative group nav-list-item"
+                      href="./contact.html"
+                      aria-label="Home"
+                    >
+                      Contact
+                      <span
+                        class="w-0 h-0.5 bg-[#DD3142] absolute left-0 -bottom-0 transition-all duration-300 group-hover:w-full"
+                      ></span>
+                    </a>
+                  </li>
+                </ul>
+                <!-- <div>
+                  <a
+                    href="#"
+                    class="w-[146px] h-[36px] uppercase text-[12px] text-white font-bold bg-[#DD3142] px-2 py-3 rounded-md"
+                    >Request a call back</a
+                  >
+                </div> -->
+              </nav>
             </div>
+
+            <!-- tablet or larger device  -->
+            <nav
+              class="hidden md:flex justify-between items-center gap-x-[40px]"
+            >
+              <ul class="h-4 flex justify-end items-center gap-[37px]">
+                <li>
+                  <a
+                    class="relative group nav-list-item"
+                    href="./index.html"
+                    aria-label="Home"
+                  >
+                    Home
+                    <span
+                      class="w-0 h-0.5 bg-[#DD3142] absolute left-0 -bottom-0 transition-all duration-300 group-hover:w-full"
+                    ></span>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    class="relative group nav-list-item"
+                    href="./about.html"
+                    aria-label="Home"
+                  >
+                    About us
+                    <span
+                      class="w-0 h-0.5 bg-[#DD3142] absolute left-0 -bottom-0 transition-all duration-300 group-hover:w-full"
+                    ></span>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    class="relative group nav-list-item"
+                    href="./service.html"
+                    aria-label="Home"
+                  >
+                    Services
+                    <span
+                      class="w-0 h-0.5 bg-[#DD3142] absolute left-0 -bottom-0 transition-all duration-300 group-hover:w-full"
+                    ></span>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    class="relative group nav-list-item"
+                    href="./project.html"
+                    aria-label="Home"
+                  >
+                    Project
+                    <span
+                      class="w-0 h-0.5 bg-[#DD3142] absolute left-0 -bottom-0 transition-all duration-300 group-hover:w-full"
+                    ></span>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    class="relative group nav-list-item"
+                    href="./blog.html"
+                    aria-label="Home"
+                  >
+                    Blogs
+                    <span
+                      class="w-0 h-0.5 bg-[#DD3142] absolute left-0 -bottom-0 transition-all duration-300 group-hover:w-full"
+                    ></span>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    class="relative group nav-list-item"
+                    href="./contact.html"
+                    aria-label="Home"
+                  >
+                    Contact
+                    <span
+                      class="w-0 h-0.5 bg-[#DD3142] absolute left-0 -bottom-0 transition-all duration-300 group-hover:w-full"
+                    ></span>
+                  </a>
+                </li>
+              </ul>
+              <div>
+                <a
+                  href="#"
+                  class="w-[146px] h-[36px] uppercase text-[12px] text-white font-bold bg-[#DD3142] px-2 py-3 rounded-md"
+                  >Request a call back</a
+                >
+              </div>
+            </nav>
           </div>
         </div>
       </div>
-    </nav>
+    </header>
     <!-- Navbar End  -->
     <main>
       <!-- about us - banner section Start  -->

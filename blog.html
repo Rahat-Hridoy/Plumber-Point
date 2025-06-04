@@ -237,6 +237,7 @@
         </div>
       </section>
       <!-- Our blog section End  -->
+
       <!-- blog article section Start -->
       <section>
         <div class="container mx-auto">
@@ -280,6 +281,7 @@
         </div>
       </section>
       <!-- blog article section End -->
+
       <!-- blog card section Start -->
       <section>
         <div class="container mx-auto">
@@ -422,6 +424,7 @@
         </div>
       </section>
       <!-- blog card section End  -->
+
       <!-- commercial section Start -->
       <section>
         <div class="container m-auto">
@@ -454,9 +457,10 @@
         </div>
       </section>
       <!-- commercial section End  -->
+
       <!-- testimonial section Start  -->
       <section
-        class="bg-[url(../assets/testimonial-bg.jpg)] min-h-[316px] bg-cover bg-no-repeat bg-center relative"
+        class="hidden md:block bg-[url(../assets/testimonial-bg.jpg)] min-h-[316px] bg-cover bg-no-repeat bg-center relative"
       >
         <!-- overlay -->
         <div class="overlay absolute inset-0 bg-black/70"></div>
@@ -546,20 +550,23 @@
         </div>
       </section>
       <!-- testimonial section End  -->
+
       <!-- Blog section Start  -->
       <section>
         <div class="container mx-auto">
           <div class="pt-[67px] pb-[50px]">
-            <h2 class="text-[#0E0E0E] text-3xl font-medium uppercase">
+            <h2
+              class="text-center md:text-left text-[#0E0E0E] text-3xl font-medium uppercase"
+            >
               our recent blogs
             </h2>
             <div
-              class="blog-card-wrapper flex justify-between items-center pt-[43px]"
+              class="blog-card-wrapper flex justify-between items-center flex-col gap-y-4 lg:flex-row pt-[43px]"
             >
               <!-- blog-card 1 -->
               <div>
                 <img
-                  src="./assets/Mask Group.jpg"
+                  src="./assets/blog1.png"
                   alt="blog-card"
                   class="w-[332px] h-[132px]"
                 />
@@ -578,7 +585,7 @@
               <!-- blog-card 2 -->
               <div>
                 <img
-                  src="./assets/Mask Group.jpg"
+                  src="./assets/blog2.png"
                   alt="blog-card"
                   class="w-[332px] h-[132px]"
                 />
@@ -597,7 +604,7 @@
               <!-- blog-card 3 -->
               <div>
                 <img
-                  src="./assets/Mask Group.jpg"
+                  src="./assets/blog1.png"
                   alt="blog-card"
                   class="w-[332px] h-[132px]"
                 />
@@ -618,10 +625,13 @@
         </div>
       </section>
       <!-- Blog section End  -->
+
       <!-- footer section Start -->
       <section class="bg-black">
         <div class="container mx-auto">
-          <div class="wrapper flex justify-between gap-10 py-[31px]">
+          <div
+            class="wrapper flex items-start px-10 lg:px-0 lg:justify-between gap-10 flex-col lg:flex-row py-[31px]"
+          >
             <!-- footer-article -->
             <div>
               <img src="./assets/logo_light.png" alt="logo-darkTheme" />
@@ -729,7 +739,9 @@
           </div>
         </div>
       </section>
+
       <hr class="h-0.5 bg-white" />
+
       <footer class="bg-black">
         <div class="container mx-auto">
           <div class="flex justify-between items-center py-3">
@@ -738,7 +750,7 @@
                 ©Copyright 2020 Techwero Systems.
               </p>
             </div>
-            <div class="flex justify-between items-center gap-15">
+            <div class="flex justify-between items-center gap-5 md:gap-15">
               <p class="text-[10px] text-[#DD3142]">Term of Services</p>
               <p class="text-[10px] text-[#DD3142]">Privacy & policy</p>
             </div>

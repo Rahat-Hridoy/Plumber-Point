@@ -27,6 +27,7 @@
 .learn-more {
   @apply text-[#DD3142] underline;
 }
+
 .contact-input {
   @apply border-b-1 border-[#707070] w-full py-2 pl-1 focus:border-0;
 }

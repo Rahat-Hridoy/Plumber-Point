@@ -236,7 +236,7 @@
           </div>
           <!-- cards -->
           <div
-            class="card-wrapper grid grid-cols-3 justify-between gap-y-5 pt-12"
+            class="card-wrapper grid grid-cols-2 lg:grid-cols-3 justify-between gap-y-5 pt-12"
           >
             <!-- card 1 -->
             <div class="flex flex-col justify-center items-center">
@@ -381,20 +381,24 @@
       <!-- commercial section Start -->
       <section>
         <div class="container m-auto">
-          <div class="grid grid-cols-[auto_851px] relative py-10">
-            <div class="absolute top-1/2 -translate-y-1/2">
+          <div
+            class="grid grid-rows-[150px_360px] lg:grid-rows-[389px] lg:grid-cols-[auto_851px] relative py-10"
+          >
+            <div
+              class="absolute top-[70px] left-[35px] lg:top-1/2 lg:-translate-y-1/2"
+            >
               <img
                 src="./assets/commercial_image.png"
                 alt="commercial_image "
-                class="w-[630px] h-[314px]"
+                class="object-cover w-[410px] h-[260px] lg:w-[630px] lg:h-[314px]"
               />
             </div>
-            <div></div>
+            <div class="blank-div"></div>
             <div
-              class="bg-[#DD3142] h-[389px] flex justify-end items-center p-13"
+              class="bg-[#DD3142] h-[360px] lg:h-[389px] flex justify-center items-end lg:justify-end lg:items-center p-8 lg:p-13"
             >
               <div>
-                <h1 class="font-bold text-[44px] text-white">
+                <h1 class="font-bold text-[38px] lg:text-[44px] text-white">
                   Commercial Service
                 </h1>
                 <p class="text-sm text-white max-w-[432px]">

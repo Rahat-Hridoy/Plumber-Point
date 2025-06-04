@@ -214,10 +214,14 @@
       <!-- Our blog section Start  -->
       <section>
         <div class="container mx-auto">
-          <div class="wrapper flex justify-between items-center pt-[19px]">
+          <div
+            class="wrapper flex flex-col lg:flex-row justify-between items-center gap-[15px] pt-[19px]"
+          >
             <!-- left article  -->
             <div>
-              <h1 class="font-bold text-[44px] pb-[22px]">Our blogs</h1>
+              <h1 class="font-bold text-[44px] pb-[10px] lg:pb-[22px]">
+                Our blogs
+              </h1>
               <p class="max-w-[432px] text-sm">
                 Lorem Ipsum is simply dummy text of the printing and typesetting
                 industry. Lorem Ipsum has been the industry's standard dummy
@@ -241,7 +245,9 @@
       <!-- blog article section Start -->
       <section>
         <div class="container mx-auto">
-          <div class="wrapper flex justify-between items-center pt-[97px]">
+          <div
+            class="wrapper flex flex-col lg:flex-row justify-between items-center pt-[97px]"
+          >
             <!-- left side figure -->
             <div>
               <img
@@ -252,7 +258,9 @@
             </div>
             <!-- right side article -->
             <div class="max-w-[531px]">
-              <h2 class="text-[38px]">Lorem Ipsum is simply dummy text.</h2>
+              <h2 class="text-[38px] py-[15px] lg:py-0">
+                Lorem Ipsum is simply dummy text.
+              </h2>
               <p class="text-xs">
                 Lorem Ipsum is simply dummy text of the printing and typesetting
                 industry. Lorem Ipsum has been the industry's standard dummy
@@ -286,7 +294,7 @@
       <section>
         <div class="container mx-auto">
           <div
-            class="blog-card-wrapper grid grid-cols-3 pt-[71px] gap-x-[89px] gap-y-[60px]"
+            class="blog-card-wrapper grid justify-self-center grid-cols-1 lg:grid-cols-3 pt-[71px] gap-x-[89px] gap-y-[60px]"
           >
             <!-- card 1 -->
             <div class="max-w-[332px] flex flex-col items-start gap-4">
@@ -428,20 +436,24 @@
       <!-- commercial section Start -->
       <section>
         <div class="container m-auto">
-          <div class="grid grid-cols-[auto_851px] relative py-10">
-            <div class="absolute top-1/2 -translate-y-1/2">
+          <div
+            class="grid grid-rows-[150px_360px] lg:grid-rows-[389px] lg:grid-cols-[auto_851px] relative py-10"
+          >
+            <div
+              class="absolute top-[70px] left-[35px] lg:top-1/2 lg:-translate-y-1/2"
+            >
               <img
                 src="./assets/commercial_image.png"
                 alt="commercial_image "
-                class="w-[630px] h-[314px]"
+                class="object-cover w-[410px] h-[260px] lg:w-[630px] lg:h-[314px]"
               />
             </div>
-            <div></div>
+            <div class="blank-div"></div>
             <div
-              class="bg-[#DD3142] h-[389px] flex justify-end items-center p-13"
+              class="bg-[#DD3142] h-[360px] lg:h-[389px] flex justify-center items-end lg:justify-end lg:items-center p-8 lg:p-13"
             >
               <div>
-                <h1 class="font-bold text-[44px] text-white">
+                <h1 class="font-bold text-[38px] lg:text-[44px] text-white">
                   Commercial Service
                 </h1>
                 <p class="text-sm text-white max-w-[432px]">

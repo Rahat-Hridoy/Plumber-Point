@@ -15,9 +15,16 @@
   font-family: "Roboto", sans-serif;
 }
 
+.container {
+  @apply px-[20px] lg:px-0;
+}
 .nav-list-item {
   @apply text-sm font-medium text-[#222222] hover:font-bold;
 }
+.active {
+  @apply border-b-2 border-[#DD3142] text-sm font-medium text-[#222222] hover:font-bold;
+}
+
 .btn {
   @apply w-[160px] h-[44px] rounded-full font-primary text-white leading-6 uppercase bg-[#DD3142] shadow-md hover:cursor-pointer hover:border-1;
 }

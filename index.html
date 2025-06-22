@@ -210,16 +210,17 @@
       </div>
     </header>
     <!-- Navbar End  -->
+
     <main>
       <!-- Hero section Start -->
       <section class="bg-[#FFFFFF]">
         <div class="container mx-auto">
           <div
-            class="flex flex-col-reverse items-center md:flex-row md:justify-between"
+            class="flex flex-col-reverse items-center justify-center md:flex-row md:justify-between"
           >
             <!-- left side contact  -->
             <div
-              class="flex flex-col items-center mt-[80px] lg:mt-[153px] leading-14 lg:items-start"
+              class="flex flex-col items-center mt-[20px] lg:mt-[153px] leading-14 lg:items-start"
             >
               <h1
                 class="font-hero text-[38px] lg:text-[44px] font-extrabold uppercase"
@@ -236,19 +237,36 @@
               >
                 +1800-9938-2839
               </h3>
-              <button class="btn">SEe all Service</button>
+              <button
+                class="btn"
+                id="bannerBtn"
+                onclick="window.location.href='./service.html'"
+              >
+                SEe all Service
+              </button>
             </div>
             <!-- right side figure -->
-            <div class="flex items-center ml-[250px] mt-[100px] relative">
+            <!-- mobile responsive banner figure -->
+            <div class="block lg:hidden">
+              <img
+                src="./assets/image 9.png"
+                alt="fiture"
+                class="w-[400px] pt-8"
+              />
+            </div>
+            <!-- banner figure for table or larger devices -->
+            <div
+              class="hidden lg:flex items-center justify-center ml-[250px] mt-[100px] relative"
+            >
               <img
                 src="./assets/image 10.png"
                 alt="figure"
-                class="w-[202px] lg:w-[302px] h-[336px] lg:h-[436px] absolute -left-[268px] -top-[51px] z-10 object-cover"
+                class="hidden lg:block w-[202px] lg:w-[302px] h-[336px] lg:h-[436px] absolute -left-[268px] -top-[51px] z-10 object-cover"
               />
               <img
                 src="./assets/image 9.png"
                 alt="figure"
-                class="h-[241px] lg:w-[390px] lg:h-[341px] object-cover"
+                class="h-[241px] w-[390px] lg:h-[341px] object-cover m-auto"
               />
             </div>
           </div>
@@ -277,6 +295,7 @@
               <button
                 class="bg-white w-[115px] h-[32px] mt-1 text-base rounded-md underline hover:cursor-pointer"
                 type="button"
+                onclick="window.location.href='./service.html'"
               >
                 Learn More
               </button>
@@ -294,6 +313,7 @@
               <button
                 class="bg-white w-[115px] h-[32px] mt-1 text-base rounded-md underline hover:cursor-pointer"
                 type="button"
+                onclick="window.location.href='./service.html'"
               >
                 Learn More
               </button>
@@ -311,6 +331,7 @@
               <button
                 class="bg-white w-[115px] h-[32px] mt-1 text-base rounded-md underline hover:cursor-pointer"
                 type="button"
+                onclick="window.location.href='./service.html'"
               >
                 Learn More
               </button>
@@ -330,18 +351,26 @@
               class="h-[407px] object-cover"
             />
             <div
-              class="w-[542px] h-[293px] bg-white/70 absolute left-0 top-14 pl-[49px]"
+              class="max-w-[542px] h-[293px] bg-white/70 absolute left-0 top-14 px-[10px] lg:px-[49px]"
             >
-              <h2 class="font-bold text-[44px] max-w-[366px] pt-4 leading-13">
+              <h2
+                class="font-bold text-[38px] lg:text-[44px] max-w-[366px] pt-4 leading-11 lg:leading-13"
+              >
                 Welcome to Plumber Company
               </h2>
-              <p class="text-sm max-w-[432px]">
+              <p class="text-sm max-w-[432px] py-2">
                 Lorem Ipsum is simply dummy text of the printing and typesetting
                 industry. Lorem Ipsum has been the industry's standard dummy
                 text ever since the 1500s, when an unknown printer took a galley
                 of type and scrambled it to make a type specimen book
               </p>
-              <button class="btn underline mt-[31px]">Learn More</button>
+              <button
+                class="btn underline mt-[20px]"
+                type="button"
+                onclick="window.location.href='./about.html'"
+              >
+                Learn More
+              </button>
             </div>
           </div>
         </div>
@@ -359,7 +388,7 @@
               <img
                 src="./assets/image.jpg"
                 alt="Histoy-image"
-                class="w-[630px] h-[314px]"
+                class="w-[630px] h-[314px] object-cover"
               />
             </div>
             <!-- right-side-article -->
@@ -774,9 +803,21 @@
                 type and scrambled it to make a type specimen book.
               </p>
               <div class="social-media-icons flex items-center gap-5">
-                <img src="./assets/fb.svg" alt="facebook" />
-                <img src="./assets/google.svg" alt="google" />
-                <img src="./assets/twitter.svg" alt="twitter" />
+                <a
+                  href="https://www.facebook.com/"
+                  class="duration-200 hover:scale-130"
+                  ><img src="./assets/fb.svg" alt="facebook"
+                /></a>
+                <a
+                  href="https://www.google.com/"
+                  class="duration-200 hover:scale-130"
+                  ><img src="./assets/google.svg" alt="google"
+                /></a>
+                <a
+                  href="https://x.com/?lang=en"
+                  class="duration-200 hover:scale-130"
+                  ><img src="./assets/twitter.svg" alt="twitter" />
+                </a>
               </div>
             </div>
             <!-- footer-service -->
@@ -896,6 +937,7 @@
     <script src="./JS/jquery-3.7.1.min.js"></script>
     <script src="./JS/slick.min.js"></script>
     <script src="./JS/main.js"></script>
+    <script src="./JS/script.js"></script>
   </body>
 </html>
 
